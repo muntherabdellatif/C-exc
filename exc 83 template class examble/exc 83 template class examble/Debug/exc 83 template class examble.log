@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 83 template class examble\exc 83 template class examble\Source.cpp(12,12): warning C4244: 'return': conversion from 'b' to 'float', possible loss of data
+          with
+          [
+              b=int
+          ]
+C:\Users\lion heart\Documents\Cpp\exc 83 template class examble\exc 83 template class examble\Source.cpp(11): message : while compiling class template member function 'float number<int,int>::sum(void)'
+C:\Users\lion heart\Documents\Cpp\exc 83 template class examble\exc 83 template class examble\Source.cpp(4): message : see reference to function template instantiation 'float number<int,int>::sum(void)' being compiled
+C:\Users\lion heart\Documents\Cpp\exc 83 template class examble\exc 83 template class examble\Source.cpp(3): message : see reference to class template instantiation 'number<int,int>' being compiled
+  exc 83 template class examble.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 83 template class examble\Debug\exc 83 template class examble.exe

@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 28 range of random\exc 28 range of random\Source.cpp(5,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\lion heart\Documents\Cpp\exc 28 range of random\exc 28 range of random\Source.cpp(13,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  exc 28 range of random.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 28 range of random\Debug\exc 28 range of random.exe

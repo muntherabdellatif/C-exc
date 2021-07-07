@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 26 equation\exc 26 equation\Source.cpp(5,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  exc 26 equation.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 26 equation\Debug\exc 26 equation.exe

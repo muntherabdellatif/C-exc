@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\copy array B to D\copy array B to D\Source.cpp(4,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\lion heart\Documents\Cpp\copy array B to D\copy array B to D\Source.cpp(5,9): warning C4101: 'b': unreferenced local variable
+  copy array B to D.vcxproj -> C:\Users\lion heart\Documents\Cpp\copy array B to D\Debug\exc 9 copy array B to D.exe

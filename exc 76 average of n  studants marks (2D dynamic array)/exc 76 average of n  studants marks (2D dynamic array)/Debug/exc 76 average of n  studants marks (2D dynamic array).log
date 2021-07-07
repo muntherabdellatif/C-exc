@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 76 average of n  studants marks (2D dynamic array)\exc 76 average of n  studants marks (2D dynamic array)\Source.cpp(11,37): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\lion heart\Documents\Cpp\exc 76 average of n  studants marks (2D dynamic array)\exc 76 average of n  studants marks (2D dynamic array)\Source.cpp(13,32): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\lion heart\Documents\Cpp\exc 76 average of n  studants marks (2D dynamic array)\exc 76 average of n  studants marks (2D dynamic array)\Source.cpp(22,30): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\lion heart\Documents\Cpp\exc 76 average of n  studants marks (2D dynamic array)\exc 76 average of n  studants marks (2D dynamic array)\Source.cpp(23,33): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+  exc 76 average of n  studants marks (2D dynamic array).vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 76 average of n  studants marks (2D dynamic array)\Debug\exc 76 average of n  studants marks (2D dynamic array).exe

@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 30 power using recursion\exc 30 power using recursion\Source.cpp(4,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\lion heart\Documents\Cpp\exc 30 power using recursion\exc 30 power using recursion\Source.cpp(17): warning C4715: 'calculate': not all control paths return a value
+  exc 30 power using recursion.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 30 power using recursion\Debug\exc 30 power using recursion.exe

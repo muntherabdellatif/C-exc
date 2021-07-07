@@ -1,0 +1,7 @@
+﻿  Rectangular.cpp
+C:\Users\lion heart\Documents\Cpp\exc 51 class for rectangulars !!\exc 51 class for rectangulars !!\Rectangular.cpp(4,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lion heart\Documents\Cpp\exc 51 class for rectangulars !!\exc 51 class for rectangulars !!\Rectangular.cpp(4,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 51 class for rectangulars !!\exc 51 class for rectangulars !!\Source.cpp(2,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  exc 51 class for rectangulars !!.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 51 class for rectangulars !!\Debug\exc 51 class for rectangulars !!.exe
