@@ -1,40 +1,4 @@
-#include <iostream>
-#define QueuesEntry int 
-using namespace std;
-
-typedef struct queues {
-
-}Queues;
-
-void IntioalizeQueues(queues* pq) {
-
-}
-bool QueuesPush(QueuesEntry e, queues* pq) {
-
-}
-bool QueuesPup(QueuesEntry* e, queues* pq) {
-
-}
-int QueuesSize(queues* pq) {
-
-}
-bool EmptyQueues(queues* pq) {
-
-}
-bool FullQueues(queues* pq) {
-
-}
-void TraverseQueue(queues* pq, void(*pf)(QueuesEntry e)) {
-
-}
-void ClearQueue(queues* pq) {
-
-}
-
-void print(QueuesEntry e) {
-	cout << e << "\t";
-}
-
+#include "Queue.h"
 int main() {
 	string line = "\n------------------------------------\n";
 	Queues q; IntioalizeQueues(&q);
