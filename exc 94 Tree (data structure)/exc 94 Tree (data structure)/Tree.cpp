@@ -27,18 +27,12 @@ int TreeDepth(Tree* pt) {
 	int b = TreeDepth(&(*pt)->left);
 	return (a > b ? 1 + a : 1 + b);
 }
-void PreOrderRec(Tree* pt,void (*pf)(TreeEntry)) {
-
-}
 void InOrderRec(Tree* pt, void(*pf)(TreeEntry)) {
 	if (*pt) {
 		InOrderRec(&(*pt)->left, pf);
 		(*pf)((*pt)->entry);
 		InOrderRec(&(*pt)->right, pf);
 	}
-}
-void PostOrderRec(Tree* pt,void (*pf)(TreeEntry)) {
-
 }
 bool TreeEmpty(Tree* pt) {
 	return (!*pt);
@@ -89,4 +83,45 @@ bool findElement(Tree* pt, TreeEntry* pe, int element) {
 		found = (p->entry == element);
 	}
 	return found;
+}
+bool DeleteItemTree(Tree* pt, TreeEntry* pe, int element) {
+	bool found=0;
+	TreeNode* q = *pt,*r =NULL;
+	while (q && !(found=(q->entry == element))) {
+		r = q;
+		if (element < q->entry) {
+			q = q->left;
+		}
+		else {
+			q = q->right;
+		}
+	}
+	if (found) {
+		(*pe) = q->entry;
+		if (!r) { // delete the root
+			DeleteNodeTree(pt);
+		}
+		else if (element < r->entry) {
+			DeleteNodeTree(&r->left);
+		}
+		else {
+			DeleteNodeTree(&r->right);
+		}
+    }
+	return found;
+}
+void DeleteNodeTree(Tree* pt) {
+	TreeNode* q = *pt, * r;
+	if (!(*pt)->left) { // no node in left side of tree
+		(*pt) = (*pt)->right;
+	}
+	else if (!(*pt)->right) { // no node in right side of tree
+		(*pt) = (*pt)->left;
+	}
+	else { // there is node in both sides of tree
+		(*pt)= (*pt)->right;
+		for (r = q->right; r->left; r = r->left);
+		r->left = q->left; // connect 2 trees 
+	}
+	free(q);
 }
