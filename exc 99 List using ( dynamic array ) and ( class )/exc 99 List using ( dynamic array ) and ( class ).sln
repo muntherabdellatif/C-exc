@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exc 99 List using ( dynamic array ) and ( class )", "exc 99 List using ( dynamic array ) and ( class )\exc 99 List using ( dynamic array ) and ( class ).vcxproj", "{47E3C072-BEE5-419A-ADFD-00218F57461C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Debug|x64.ActiveCfg = Debug|x64
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Debug|x64.Build.0 = Debug|x64
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Debug|x86.ActiveCfg = Debug|Win32
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Debug|x86.Build.0 = Debug|Win32
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Release|x64.ActiveCfg = Release|x64
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Release|x64.Build.0 = Release|x64
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Release|x86.ActiveCfg = Release|Win32
+		{47E3C072-BEE5-419A-ADFD-00218F57461C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28518A82-F115-45BE-8206-EA28E3AE1281}
+	EndGlobalSection
+EndGlobal
