@@ -57,14 +57,14 @@ template<class T>bool List<T>::isFull() {
 }
 template<class T>bool List<T>::getElementList(T* element, int  position) {
 	if (size) {
-		element = listArray[position];
+		*element = listArray[position];
 		return 1;
 	}
 	return 0;
 }
 template<class T>bool List<T>::replaceElementList(T* element, int  position) {
 	if (size) {
-		listArray[position]=element;
+		listArray[position]=*element;
 		return 1;
 	}
 	return 0;
