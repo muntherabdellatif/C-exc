@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 119 move last node to the front of list\exc 119 move last node to the front of list\Header.h(218,4): warning C4101: 'element': unreferenced local variable
+C:\Users\lion heart\Documents\Cpp\exc 119 move last node to the front of list\exc 119 move last node to the front of list\Header.h(215): message : while compiling class template member function 'void List<int>::MoveLatoFr(void)'
+C:\Users\lion heart\Documents\Cpp\exc 119 move last node to the front of list\exc 119 move last node to the front of list\Source.cpp(13): message : see reference to function template instantiation 'void List<int>::MoveLatoFr(void)' being compiled
+C:\Users\lion heart\Documents\Cpp\exc 119 move last node to the front of list\exc 119 move last node to the front of list\Source.cpp(7): message : see reference to class template instantiation 'List<int>' being compiled
+  exc 119 move last node to the front of list.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 119 move last node to the front of list\Debug\exc 119 move last node to the front of list.exe

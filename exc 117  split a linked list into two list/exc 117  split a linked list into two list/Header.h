@@ -20,6 +20,7 @@ public:
 	void PassList(void(*pf)(T));
 	void cloneList(List* cl);
 	void splitList(List* sl1, List* sl2);
+	void deleteListMN(int M, int N);
 };
 template<class T> List<T>::List() {
 	size = 0;
@@ -181,5 +182,20 @@ template<class T>void List<T>::splitList(List* sl1, List* sl2) {
 		psl1->next = np1;
 		np1->entry = p3->entry;
 		free(p3); size--;
+	}
+}
+template<class T>void List<T>::deleteListMN(int M, int N) {
+	ListNode* p1 = top->next;
+	ListNode* p2 = top;
+	while (p1) {
+		for (int i = 0; i < (n - 1); i++) {
+			p1 = p1->next;
+			p2 = p2 > next;
+		}
+		for (int j = 0; j < m; j++) {
+			p2->next = p1->next;
+			free(p1); size--;
+			p1 = p2->next;
+		}
 	}
 }
