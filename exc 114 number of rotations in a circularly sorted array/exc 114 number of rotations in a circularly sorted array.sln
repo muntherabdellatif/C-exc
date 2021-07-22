@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exc 114 number of rotations in a circularly sorted array", "exc 114 number of rotations in a circularly sorted array\exc 114 number of rotations in a circularly sorted array.vcxproj", "{3B774D68-38D5-40DB-BD28-60A374CAF374}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Debug|x64.ActiveCfg = Debug|x64
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Debug|x64.Build.0 = Debug|x64
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Debug|x86.Build.0 = Debug|Win32
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Release|x64.ActiveCfg = Release|x64
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Release|x64.Build.0 = Release|x64
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Release|x86.ActiveCfg = Release|Win32
+		{3B774D68-38D5-40DB-BD28-60A374CAF374}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EF45AC2-4609-4510-90E5-498972F48E5C}
+	EndGlobalSection
+EndGlobal
