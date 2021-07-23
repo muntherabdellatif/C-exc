@@ -10,7 +10,7 @@ int main() {
 	}
 	l.passList(print);
 	cout << "null" << endl;
-	l.MoveLatoFr();
+	l.ReverseList();
 	l.passList(print);
 	cout << "null" << endl;
 }

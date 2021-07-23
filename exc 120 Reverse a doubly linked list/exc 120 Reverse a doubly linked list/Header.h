@@ -135,5 +135,16 @@ template <class T> bool DoublyList<T>::isEmpty() {
 	return !size;
 }
 template <class T> void DoublyList<T>::ReverseList() {
-
+	ListNode* p1 = top;
+	ListNode* p2 = top->next;
+	while (p1 != rear) {
+		p1->next = p1->previous;
+		p1->previous = p2;
+		p1 = p2;
+		if (p2->next) { p2 = p2->next; }
+	}
+	p1->next = p1->previous;
+	p1->previous = NULL;
+	rear = top;
+	top = p1;
 }

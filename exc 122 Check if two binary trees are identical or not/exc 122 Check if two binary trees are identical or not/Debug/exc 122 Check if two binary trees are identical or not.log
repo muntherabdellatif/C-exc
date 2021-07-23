@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 122 Check if two binary trees are identical or not\exc 122 Check if two binary trees are identical or not\Source.cpp(7,12): warning C4101: 'e': unreferenced local variable
+  Tree.cpp
+  Generating Code...
+C:\Users\lion heart\Documents\Cpp\exc 122 Check if two binary trees are identical or not\exc 122 Check if two binary trees are identical or not\Tree.cpp(76): warning C4715: 'InsertTree': not all control paths return a value
+  exc 122 Check if two binary trees are identical or not.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 122 Check if two binary trees are identical or not\Debug\exc 122 Check if two binary trees are identical or not.exe
