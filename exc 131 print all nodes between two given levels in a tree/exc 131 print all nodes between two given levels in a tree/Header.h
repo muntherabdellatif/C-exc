@@ -16,6 +16,7 @@ class BinaryTree {
 	void passPreOrder2(TreeNode* tp, void(*pf)(T));
 	void TreeMirror2(TreeNode* np);
 	void print2D2(TreeNode* np, int depth);
+	void printLevelsNodes2(TreeNode* np, int depth, int startLevel, int endLevel);
 public:
 	BinaryTree();
 	void insertTree(T element);
@@ -26,7 +27,7 @@ public:
 	void TreeMirror();
 	bool ifNodesHaveOneChild();
 	void print2D();
-
+	void printLevelsNodes(int startLevel, int endLevel);
 };
 template<class T> BinaryTree<T>::BinaryTree() {
 	size = 0; root = NULL;
@@ -142,6 +143,12 @@ template<class T>void BinaryTree<T>::print2D() {
 	TreeNode* np = root;
 	print2D2(np, depth);
 }
+template<class T>
+inline void BinaryTree<T>::printLevelsNodes(int startLevel,int endLevel){ 
+	int depth = 0;
+	TreeNode* np = root;
+	printLevelsNodes2(np, depth , startLevel, endLevel);
+}
 template<class T>void BinaryTree<T>::print2D2(TreeNode* np, int depth) {
 	if (np) {
 		print2D2(np->right, ++depth);
@@ -149,6 +156,20 @@ template<class T>void BinaryTree<T>::print2D2(TreeNode* np, int depth) {
 		for (int i = 0; i < depth; i++) { cout << "\t"; }
 		cout << np->treeEntry << endl;
 		print2D2(np->left, ++depth);
+		depth--;
+	}
+}
+
+template<class T>
+inline void BinaryTree<T>::printLevelsNodes2(TreeNode* np, int depth, int startLevel, int endLevel)
+{
+	if (np) {
+		printLevelsNodes2(np->right, ++depth , startLevel, endLevel);
+		depth--;
+		if (depth >= startLevel && depth <= endLevel) {
+			cout << np->treeEntry << "  ";
+         }
+		printLevelsNodes2(np->left, ++depth , startLevel, endLevel);
 		depth--;
 	}
 }
