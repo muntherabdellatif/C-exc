@@ -21,7 +21,7 @@ template<class T> class BinaryTree {
 	void FindBSTrec2(TreeNode* np, T element, bool* found);
 	void sumPair2(TreeNode* np1, int sum);
 	void sumPair3(TreeNode* np1, TreeNode* np2, int sum);
-	void smallestKthNode2(TreeNode* ,T *s,int *counter,bool *done);
+	void smallestKthNode2(TreeNode* ,T *s,int *counter,int * result);
 public:
 	BinaryTree();
 	void insertTree(T element);
@@ -232,9 +232,9 @@ template<class T>inline void BinaryTree<T>::sumPair(int sum) {
 template<class T>inline T BinaryTree<T>::smallestKthNode(T s) {
 	TreeNode* np = root;
 	int counter = 0;
-	bool done = 0;
-	smallestKthNode2(np,&s,&counter,&done);
-	return T(s);
+	int result = 0;
+	smallestKthNode2(np,&s,&counter,&result);
+	return T(result);
 }
 template<class T>void BinaryTree<T>::print2D2(TreeNode* np, int depth) {
 	if (np) {
@@ -307,14 +307,11 @@ template<class T>inline void BinaryTree<T>::sumPair3(TreeNode* np1, TreeNode* np
 		sumPair3(np1, np2->right, sum);
 	}
 }
-template<class T>inline void BinaryTree<T>::smallestKthNode2(TreeNode* np,T *s,int *counter ,bool *done){
-	if (np ) {
-		smallestKthNode2(np->left, s, counter,done);
-		if (*done ==1) {}
-		else {
-			if (*counter >= 0) { (*counter)++; }
-			if (*counter == *s) { *s = np->treeEntry; *done = 1; }
-		}
-		smallestKthNode2(np->left, s, counter,done);
+template<class T>inline void BinaryTree<T>::smallestKthNode2(TreeNode* np,T *s,int *counter ,int *result){
+	if (np) {
+		smallestKthNode2(np->left, s, counter,result);
+		(*counter)++;
+		if (*counter == *s) { *result = np->treeEntry ;}
+		smallestKthNode2(np->right, s, counter, result);
 	}
 }
