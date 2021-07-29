@@ -1,7 +1,7 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
-template<class T>
-class BinaryTree {
+template<class T> class BinaryTree {
 	struct TreeNode {
 		T treeEntry;
 		TreeNode* left;
@@ -48,25 +48,18 @@ template<class T>inline void BinaryTree<T>::insertTree(T element){
 	np = root;
 	int n = 1;
 	if (size > 0) {
-		while (n != (size + 1)) {
-			int s = size + 1;
-			for (int i = s; i != 1 ; i /= 2) {
-				if (i == (2 * n)) {
-					n = 2*n;
-					if (n == (size + 1)) {
-						np->left = newNode;
-						i = 1;
-					}
-					else { np = np->left; }
-				}
-				else if (i == (2 * n + 1)) {
-					n = n * 2 + 1;
-					if (n == (size + 1)) {
-						np->right = newNode;
-						i = 1;
-					}
-					else { np = np->right; }
-				}
+		int depth = log2(size + 1);
+		int postion = size + 1;
+		int* path = new int[depth];
+		for (int i = 0 , j= postion ; i < depth; i++,j=j/2) {path[i] = j;}
+		for (int i = depth; i > 0; i--) {
+			if (i == 1) {
+				if (path[i-1] == (n * 2)) { np->left = newNode; }
+				else if (path[i-1] == (n * 2 + 1)) { np->right = newNode; }
+			}
+			else {
+				if (path[i-1] == (n * 2)) { n = n * 2; np = np ->left; }
+				else if (path[i-1] == (n * 2 + 1)) { n = n * 2 + 1; np = np->right; }
 			}
 		}
 	}

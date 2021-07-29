@@ -1,0 +1,14 @@
+﻿  Source.cpp
+C:\Users\lion heart\Documents\Cpp\exc 138 Find a pair with the given sum in a BST\exc 138 Find a pair with the given sum in a BST\Header.h(54,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\lion heart\Documents\Cpp\exc 138 Find a pair with the given sum in a BST\exc 138 Find a pair with the given sum in a BST\Header.h(46): message : while compiling class template member function 'void BinaryTree<int>::insertTree(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\lion heart\Documents\Cpp\exc 138 Find a pair with the given sum in a BST\exc 138 Find a pair with the given sum in a BST\Source.cpp(8): message : see reference to function template instantiation 'void BinaryTree<int>::insertTree(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\lion heart\Documents\Cpp\exc 138 Find a pair with the given sum in a BST\exc 138 Find a pair with the given sum in a BST\Source.cpp(7): message : see reference to class template instantiation 'BinaryTree<int>' being compiled
+  exc 138 Find a pair with the given sum in a BST.vcxproj -> C:\Users\lion heart\Documents\Cpp\exc 138 Find a pair with the given sum in a BST\Debug\exc 138 Find a pair with the given sum in a BST.exe
